@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Roboto, Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  padding: 1rem;
+  background: linear-gradient(rgb(12, 180, 231), rgb(66, 189, 219));
+}
+
+.player-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.result {
+  height: 10vh;
+}
+
+.score {
+  height: 10vh;
+  background: linear-gradient(rgb(12, 180, 231), rgb(66, 189, 219));
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.buttons {
+  display: flex;
+}
+
+button {
+  border: none;
+  width: 100px;
+  height: 40px;
+  margin: 30px;
+  color: #fff;
+  background: linear-gradient(rgb(12, 180, 231), rgb(66, 189, 219));
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background: linear-gradient(rgb(11, 143, 184), rgb(49, 157, 184));
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    flex-direction: column;
+  }
+}
